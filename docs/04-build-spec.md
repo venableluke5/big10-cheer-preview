@@ -4,7 +4,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | Reverse-engineered draft; not approved |
+| Status | Verified existing-build record; business facts and client approval remain pending |
 | Implementation | `site/` |
 | Project type | Existing prospect redesign mockup / free preview |
 | Last updated | `2026-07-17` |
@@ -59,7 +59,9 @@ The desktop header also links directly to the existing site’s tryout informati
 - The header begins over the hero and gains a fixed dark background after the page scrolls more than 16 pixels.
 - Below 960 pixels, a menu button controls a full-width navigation panel.
 - JavaScript updates `aria-expanded`, toggles the open class, and prevents body scrolling while the menu is open.
+- While open, the menu makes the skip link, main content, and footer inert and hidden from the accessibility tree; focus moves to the first navigation link and is contained within the visible header/menu controls.
 - The menu closes when a navigation link is selected, Escape is pressed, or the viewport reaches 960 pixels.
+- Escape, link activation, and button closing restore focus to the menu button; desktop reset removes isolation without moving focus to the hidden button.
 - At 960 pixels and above, the menu button is hidden and inline navigation plus the header action is displayed.
 
 ## Contact and action paths
@@ -86,7 +88,7 @@ All business facts and external destinations remain unverified pending confirmat
 - At 1280 pixels, hero/image positioning and training spacing receive final wide-screen adjustments.
 - Required future audit widths are approximately 375, 390, 768, 1024, and 1440 pixels, plus content-driven breakpoints.
 
-Responsive code exists, but no completed viewport evidence is recorded.
+The complete page was checked at requested browser viewports of 375, 390, 768, 1024, and 1440 pixels on `2026-07-17`. No document-level horizontal overflow was detected. Final full-page captures are recorded at the requested 390px and 1440px viewports.
 
 ## JavaScript behavior
 
@@ -105,8 +107,18 @@ No form submission, analytics, client account, or data-storage behavior exists i
 - `site/css/input.css` imports `tailwindcss`, declares `site/index.html` and `site/js/script.js` as sources, and contains the authored design tokens and component CSS.
 - `site/css/styles.css` is the file loaded by the page and identifies itself as minified Tailwind CSS `v4.3.2` output.
 - Both files are tracked at the rollback commit.
-- The Tailwind standalone executable location, exact build command, and reproducibility check are not documented in this repository.
-- Do not change source CSS or regenerate compiled CSS until an approved refinement requires it and the executable/command is confirmed.
+- Verified executable: `C:\Users\Luke Venable\Documents\ServiceSide Projects\servicesidesites-redesign\tailwindcss.exe`.
+- Verified executable SHA-256: `224A62A8351D3B8DA9D950A4EB1D7176DC901DC4735B47F816F3DFCBC67D8654`.
+- Run from `site/`: `& "C:\Users\Luke Venable\Documents\ServiceSide Projects\servicesidesites-redesign\tailwindcss.exe" -i .\css\input.css -o .\css\styles.css --minify`.
+- The approved refinement build reported Tailwind CSS `v4.3.2`; the executable remains outside this repository and is not committed.
+
+## Presentation image delivery
+
+- Original logo: `site/images/cheer-magic-logo.png`, 2700×1475, 398,744 bytes, transparent.
+- Delivery logo: `site/images/cheer-magic-logo.webp`, 640×350, 45,798 bytes, transparency preserved.
+- Original athlete image: `site/images/young-athlete.png`, 786×720, 532,961 bytes; its alpha channel is fully opaque.
+- Delivery athlete image: `site/images/young-athlete.webp`, 786×720, 60,044 bytes.
+- The original files remain in place. Markup uses the derivatives with accurate intrinsic dimensions; other images were not converted merely for consistency.
 
 ## Metadata
 
@@ -152,6 +164,6 @@ Missing metadata is an audit subject, not authorization to add it.
 - Do not reorganize assets to match the reusable template’s blank-project folders.
 - Do not replace the existing build; future changes must map to explicitly approved audit findings.
 
-## Audit acceptance boundary
+## Current acceptance boundary
 
-The next pass should determine whether the existing page is accurate, trustworthy, accessible, responsive, functional, and presentation-ready while protecting its documented visual strengths. It must not implement corrections.
+The read-only audit is complete and the explicitly approved F02–F07 corrections have been implemented. F01 remains a separate client-fact and asset-rights verification task. Do not use this build record as approval of business copy, facts, external destinations, branding rights, deployment, or launch.

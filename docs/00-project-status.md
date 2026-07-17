@@ -21,13 +21,13 @@
 | Existing business website | `https://www.big10cheer.com` |
 | Provisional presentation implementation | `site/` |
 | Preserved earlier implementation | `source/` |
-| Current phase | Workflow migration complete; read-only audit next |
+| Current phase | Approved F02–F07 refinement pass complete; F01 client-fact verification remains open |
 | Current document status | Draft; no client approval recorded |
-| Next approved action | Perform one complete read-only audit of `site/` |
-| Audit blocker | None; missing facts must be reported as unverified rather than assumed |
-| Refinement blockers | Explicit approval of numbered audit findings and confirmation of any affected business facts |
+| Next approved action | Complete the separate F01 client-fact and asset-rights verification checklist before prospect presentation |
+| Audit blocker | None; the completed read-only audit produced findings F01–F07 |
+| Refinement blockers | None for approved F02–F07; F01 was explicitly excluded from implementation |
 | Launch status | Out of scope; no launch approval, hosting target, or deployment evidence |
-| Last approved milestone | None recorded |
+| Last approved milestone | One controlled implementation pass for F02–F07 |
 
 ## Phase checklist
 
@@ -37,12 +37,12 @@
 - [ ] Client intake confirmed
 - [ ] Copy approved
 - [ ] Design direction client-approved or locked
-- [ ] Existing build verified against the workflow specification
-- [ ] Read-only audit complete
-- [ ] Consolidated refinement list approved
-- [ ] Approved refinement pass complete
-- [ ] Final QA complete
-- [ ] Presentation-ready desktop and mobile screenshots complete
+- [x] Existing build verified against the workflow specification
+- [x] Read-only audit complete
+- [x] Consolidated F02–F07 refinement list approved
+- [x] Approved refinement pass complete
+- [ ] Final QA complete — reduced-motion emulation and F01 fact verification remain open
+- [x] Presentation-ready desktop and mobile screenshots complete
 - [ ] Prospect mockup-ready definition of done met
 - [ ] Client approval received
 - [ ] Launch authorized
@@ -51,12 +51,13 @@
 
 - `site/` is the provisional audit target because it is the more complete presentation implementation. This is a migration decision, not client approval.
 - `source/` remains preserved as an earlier implementation.
-- `screenshots/` contains reference captures from existing materials; it is not a verified responsive screenshot set for `site/`.
+- `screenshots/` retains all reference captures and now also contains clearly named final `site/` captures at requested 390px and 1440px viewports.
 - A Git remote is not deployment evidence.
 - No repository file records client approval, hosting ownership, a deployment target, or launch authorization.
 
 ## Status notes
 
 - Last updated: `2026-07-17`
-- Updated during: Big10 repeatable-workflow documentation migration
-- Existing website and implementation files were intentionally excluded from the migration scope.
+- Updated during: approved F02–F07 refinement pass
+- F01 remains unresolved: identity, contact, location, programs, external destinations, claims, affiliations, and asset rights have not been client-approved by repository evidence.
+- No launch, deployment, merge, push, tag, or production action was authorized or performed.

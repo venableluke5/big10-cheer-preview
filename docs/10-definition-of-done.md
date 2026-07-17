@@ -12,57 +12,57 @@ This project is currently a prospect/free-preview mockup. It is not client-appro
 
 ### Audit and refinement
 
-- [ ] One complete read-only audit of `site/` is complete.
-- [ ] Audit findings are limited to meaningful defects and clearly separated from optional preferences.
-- [ ] One consolidated numbered refinement list has been explicitly approved.
-- [ ] All approved meaningful findings are addressed or intentionally declined with a recorded reason.
-- [ ] `source/` and protected design elements remain preserved.
+- [x] One complete read-only audit of `site/` is complete.
+- [x] Audit findings are limited to meaningful defects and clearly separated from optional preferences.
+- [x] The consolidated F02–F07 refinement list was explicitly approved; F01 was explicitly excluded from implementation.
+- [x] All approved meaningful findings are addressed or intentionally declined with a recorded reason.
+- [x] `source/` and protected design elements remain preserved.
 
 ### Responsive and functional quality
 
-- [ ] The complete page has been verified at approximately 375, 390, 768, 1024, and 1440 pixels.
-- [ ] No material overflow, overlap, clipping, unusable control, broken image crop, or unreadable text remains.
-- [ ] Header, navigation, internal anchors, phone, email, registration, booking, tryout, and directions paths work as intended.
-- [ ] No material console or asset-loading error remains.
+- [x] The complete page has been verified at approximately 375, 390, 768, 1024, and 1440 pixels.
+- [x] No material overflow, overlap, clipping, unusable control, broken image crop, or unreadable text remains.
+- [x] Header, navigation, internal anchors, phone, email, registration, booking, tryout, and directions paths work as intended within the recorded test limits.
+- [x] No material console or asset-loading error remains.
 
 ### Accessibility
 
-- [ ] Keyboard navigation and menu operation have been tested.
-- [ ] Visible focus, skip-link behavior, semantic structure, alternative text, decorative-image handling, and tap targets have been checked.
-- [ ] Contrast has been checked in important states.
+- [x] Keyboard navigation and menu operation have been tested.
+- [x] Visible focus, skip-link behavior, semantic structure, alternative text, decorative-image handling, and tap targets have been checked.
+- [x] Contrast has been checked in important states.
 - [ ] Reduced-motion behavior has been checked.
 - [ ] No unresolved material accessibility defect remains.
 
 ### Presentation evidence
 
-- [ ] Final desktop and mobile screenshots of `site/` are presentation-ready.
-- [ ] Screenshot viewport sizes and filenames are documented.
-- [ ] Screenshots do not reuse or overwrite source/reference captures.
-- [ ] The final result preserves the distinctive Big10/Cheer Magic visual direction.
+- [x] Final desktop and mobile screenshots of `site/` are presentation-ready.
+- [x] Screenshot viewport sizes and filenames are documented.
+- [x] Screenshots do not reuse or overwrite source/reference captures.
+- [x] The final result preserves the distinctive Big10/Cheer Magic visual direction.
 
 ### Repository evidence
 
 - [ ] QA is complete and recorded in `docs/06-qa-checklist.md`.
-- [ ] The Tailwind build relationship is verified if CSS was changed.
-- [ ] The final repository status is clean.
-- [ ] The final branch and commit are recorded.
-- [ ] No existing protected asset, historical implementation, or unrelated file was overwritten or removed.
-- [ ] No unresolved material usability defect remains.
+- [x] The Tailwind build relationship is verified if CSS was changed.
+- [x] The final repository status is clean after the local refinement commit.
+- [x] The final branch is recorded here and the exact commit is recorded in the completion response.
+- [x] No existing protected asset, historical implementation, or unrelated file was overwritten or removed.
+- [x] No unresolved material usability defect remains in the approved F02–F07 scope.
 
 ## Prospect presentation-ready evidence
 
 | Field | Value |
 | --- | --- |
-| Audit report | Not completed |
-| Approved refinement list | Not approved |
-| Refinement commit | Not recorded |
-| QA record | `docs/06-qa-checklist.md` — not run |
-| Desktop screenshot | Not created |
-| Mobile screenshot | Not created |
-| Final branch | Not recorded |
-| Final commit | Not recorded |
-| Approved/confirmed facts source | Not completed |
-| Known limitations | Workflow migration only; audit and all completion evidence remain pending |
+| Audit report | Completed read-only audit with findings F01–F07; no separate audit file was added |
+| Approved refinement list | F02–F07 approved; F01 explicitly excluded and unresolved |
+| Refinement commit | Final local Git HEAD created by this pass; exact hash reported in the completion response |
+| QA record | `docs/06-qa-checklist.md` — approved-scope QA recorded `2026-07-17` |
+| Desktop screenshot | `screenshots/big10-cheer-final-desktop-1440.png` — requested 1440×900 viewport; 1425×6896 content capture |
+| Mobile screenshot | `screenshots/big10-cheer-final-mobile-390.png` — requested 390×844 viewport; 375×8508 content capture |
+| Final branch | `codex/workflow-migration` |
+| Final commit | Final local Git HEAD; exact hash reported after commit |
+| Approved/confirmed facts source | Not completed; F01 remains open |
+| Known limitations | Client fact/copy/link/branding/asset-rights approval is absent; reduced-motion mode was inspected in source but not emulated; no launch or deployment approval exists |
 
 ## Outside the current milestone
 
@@ -70,7 +70,7 @@ Client approval, launch readiness, deployment, domain/hosting configuration, han
 
 ## Current determination
 
-**Not done.** Workflow migration does not satisfy any audit, refinement, QA, responsive, accessibility, screenshot, client-approval, or launch milestone.
+**Not done.** The approved F02–F07 technical refinement, responsive checks, link checks, and presentation captures are complete, but the prospect presentation-ready definition remains blocked by unresolved F01 information/rights verification and the unperformed reduced-motion emulation check. Client approval, deployment, and launch remain outside scope.
 
 ## Stop rule
 
