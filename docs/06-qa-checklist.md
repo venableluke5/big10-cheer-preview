@@ -6,8 +6,10 @@
 
 - [ ] No placeholder content remains.
 - [ ] Business facts match confirmed intake evidence.
+- [ ] Every public business claim matches an `Approved` or `Locked` record in `docs/11-business-truth.md`.
 - [ ] No unsupported claims are present.
 - [ ] Final copy matches approved copy.
+- [ ] The implemented route, section purposes, and primary actions match approved `docs/12-site-plan.md` records.
 - [ ] Phone number, email address, and physical address are confirmed and correct.
 - [ ] Programs, offerings, and service/location statements are confirmed and correct.
 - [ ] Registration, booking, tryout, map, email, and phone destinations are current.
@@ -74,6 +76,7 @@
 - [x] Decorative images and marks are hidden appropriately.
 - [x] Color contrast is acceptable for the corrected coral CTA and tested focus states; white on `#c92d4b` is 5.30:1 and hover white on `#a8203e` is 7.14:1.
 - [ ] Reduced-motion preferences are respected in CSS and JavaScript.
+- [ ] Reduced-motion preference has been emulated and the rendered CSS and JavaScript behavior has been verified.
 - [x] Tap targets are usable: no rendered interactive target was below 24px in both axes at 390px; three icon links measured 40×40px.
 - [x] External-link behavior is understandable.
 - [x] Form labels and states are documented as not applicable unless a form is later approved and added.
@@ -84,9 +87,18 @@ Reduced-motion note: the CSS rule and JavaScript branch were inspected, and the 
 
 - [ ] Page title exists and is accurate.
 - [ ] Meta description exists and is accurate.
+- [ ] No unresolved head placeholder or unapproved production value remains.
+- [ ] Metadata and indexing behavior match approved `docs/13-seo-requirements.md` records.
 - [ ] Canonical/indexing requirements are decided and implemented if approved.
+- [ ] Every production canonical, when applicable, uses the approved production URL and route.
+- [ ] No preview, localhost, staging, example, or placeholder URL leaks into a production canonical or social value.
+- [ ] Preview and production robots/indexing policies are approved separately and implemented for the tested environment.
 - [ ] Open Graph/social metadata requirements are decided and implemented if approved.
+- [ ] Open Graph and Twitter/X values, images, absolute URLs, and image descriptions match approved requirements.
 - [x] Favicon loads and is suitable.
+- [ ] Favicon declarations and referenced assets match the approved favicon decision and documented asset rights.
+- [ ] Structured data is absent unless eligible, visible, supported by approved business truth, and explicitly approved.
+- [ ] Sitemap inclusion is absent unless approved production routes and URLs make it eligible.
 - [x] Images have appropriate formats, dimensions, loading behavior, and file weight.
 - [x] CSS output is current relative to `site/css/input.css`.
 - [x] The Tailwind build command is documented before CSS changes are made.
@@ -114,6 +126,6 @@ Reduced-motion note: the CSS rule and JavaScript branch were inspected, and the 
 | Tester | Codex |
 | Commit tested | Working tree based on `7f8f4da429c1551aa1556f61f75a94fdc921aa97`; final local refinement commit follows this record |
 | Passed | Approved F02–F07 implementation QA passed with the explicit limitations below; overall prospect sign-off is not complete |
-| Known limitations | F01 business-fact, copy, destination approval, branding, and asset-rights verification remain open; reduced-motion preference was not emulated; phone/mail operating-system handlers were not launched |
-| Items not verified | All Content-section approval items; canonical/social metadata because it was excluded; actual reduced-motion mode; client approval and launch state |
+| Known limitations | F01 business-fact, copy, destination approval, branding, and asset-rights verification remain open; business truth, site plan, and SEO requirements are not approved; reduced-motion preference was not emulated; phone/mail operating-system handlers were not launched |
+| Items not verified | All Content-section approval items; approval against `docs/11-business-truth.md`, `docs/12-site-plan.md`, and `docs/13-seo-requirements.md`; canonical, robots, social metadata, favicon approval, sitemap, and structured-data eligibility; actual reduced-motion mode; client approval and launch state |
 | Follow-up | Complete F01 with client evidence and run one reduced-motion emulation check before presentation-ready definition-of-done sign-off |

@@ -39,6 +39,8 @@ The implementation is one static home page in this order:
 9. Contact and location section
 10. Footer with program and contact links
 
+This order records the existing implementation; it is not an approved site plan. Route, section-purpose, and primary-action approval is controlled by `docs/12-site-plan.md`, and every public business claim remains subject to `docs/11-business-truth.md`.
+
 ## Navigation and anchors
 
 | Purpose | Target |
@@ -145,6 +147,8 @@ No form submission, analytics, client account, or data-storage behavior exists i
 
 Missing metadata is an audit subject, not authorization to add it.
 
+Any future metadata, canonical, robots/indexing, social-card, favicon, sitemap, or structured-data change requires an approved project-specific record in `docs/13-seo-requirements.md`. The current build record does not supply production values.
+
 ## Forms and integrations
 
 - No contact form is present.
@@ -163,6 +167,9 @@ Missing metadata is an audit subject, not authorization to add it.
 - Do not add pages, forms, tracking, integrations, claims, schedules, or deployment configuration during audit.
 - Do not reorganize assets to match the reusable template’s blank-project folders.
 - Do not replace the existing build; future changes must map to explicitly approved audit findings.
+- Do not treat existing claims as approved business truth; consult `docs/11-business-truth.md`.
+- Do not add or expand routes absent from an approved `docs/12-site-plan.md`.
+- Do not add production SEO values absent from approved `docs/13-seo-requirements.md` records.
 
 ## Current acceptance boundary
 

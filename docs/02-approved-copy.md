@@ -2,6 +2,8 @@
 
 > **Approval warning:** This document records the copy already present in `site/index.html`. It is existing draft copy, not formally client-approved copy. No wording was changed during workflow migration.
 
+Factual wording depends on approved records in `docs/11-business-truth.md`. Page and route placement depends on `docs/12-site-plan.md`. Metadata and indexing requirements depend on `docs/13-seo-requirements.md`. No wording is approved or locked unless its own status explicitly says `Approved` or `Locked`.
+
 ## Document metadata
 
 | Field | Value |

@@ -26,6 +26,7 @@ Record the branch, HEAD, and complete Git status before and after. Stop if repos
 5. Read `README.md` and `project.md` as original project evidence.
 6. Use `source/` only for historical context when it materially clarifies provenance; make no recommendation merely to combine the two implementations.
 7. Use `screenshots/` only as source/reference material for factual comparison. They are not the final desktop/mobile screenshot set for `site/`.
+8. Treat `docs/01-client-intake.md` as repository-backfilled discovery and consult `docs/11-business-truth.md` for approval status, `docs/12-site-plan.md` for route/page-purpose status, and `docs/13-seo-requirements.md` for metadata and indexing status.
 
 ## Audit scope
 
@@ -45,8 +46,13 @@ Review the complete `site/` page for:
 - CSS/JavaScript weight, compiled/source CSS relationship, browser behavior, console errors, and asset requests.
 - Presentation readiness, including whether final desktop and mobile screenshots can responsibly be produced after refinement.
 - Compliance with `docs/01-client-intake.md`, `docs/02-approved-copy.md`, `docs/03-design-direction.md`, `docs/04-build-spec.md`, and explicit exclusions.
+- Consistency with `docs/11-business-truth.md`, including absence of claims sourced only from intake, historical material, screenshots, or current markup.
+- Consistency of the existing route and section purposes with `docs/12-site-plan.md`; do not treat the built page as automatic route approval or recommend unapproved routes.
+- Consistency of metadata, canonical, robots/indexing, social metadata, favicon, sitemap, and structured-data state with `docs/13-seo-requirements.md`; do not propose invented production values.
 
 There is no contact form in the current implementation. Confirm that fact; do not invent form findings or recommend a form unless a concrete approved requirement supports it.
+
+Do not implement or strengthen an unsupported claim, add an unapproved route, add a production SEO value without approval, or change any protected path. The audit is read-only and grants no implementation authority.
 
 ## Required viewport review
 

@@ -6,6 +6,10 @@ This project is currently a prospect/free-preview mockup. It is not client-appro
 
 ### Information integrity
 
+- [ ] Required public facts are approved or locked in `docs/11-business-truth.md`.
+- [ ] The existing one-page route, section purposes, and primary actions are approved in `docs/12-site-plan.md`.
+- [ ] Applicable prospect/preview metadata and indexing requirements are approved in `docs/13-seo-requirements.md`.
+- [ ] Logo, photo, graphic, and presentation-use permissions are recorded.
 - [ ] Business identity, public brand, contact details, location, programs, and external destinations are approved or sufficiently confirmed for a prospect presentation.
 - [ ] No unsupported claims, testimonials, schedules, prices, credentials, affiliations, guarantees, or outcome claims remain.
 - [ ] Any intentionally unresolved fact is omitted or clearly handled without misleading the viewer.
@@ -62,15 +66,20 @@ This project is currently a prospect/free-preview mockup. It is not client-appro
 | Final branch | `codex/workflow-migration` |
 | Final commit | Final local Git HEAD; exact hash reported after commit |
 | Approved/confirmed facts source | Not completed; F01 remains open |
+| Approved site plan | Not completed; the existing one-page structure is proposed only |
+| Approved SEO requirements | Not completed; no production URL, canonical, indexing, sitemap, or structured-data decision is approved |
+| Asset permissions | Not completed; logo and photo rights remain open |
 | Known limitations | Client fact/copy/link/branding/asset-rights approval is absent; reduced-motion mode was inspected in source but not emulated; no launch or deployment approval exists |
 
 ## Outside the current milestone
 
 Client approval, launch readiness, deployment, domain/hosting configuration, handoff, and maintenance are outside the current prospect-mockup scope. They require separate documentation and explicit authorization if the prospect becomes a client.
 
+Prospect presentation readiness permits only the approved mockup milestone and does not imply production launch readiness. Production work would additionally require an approved production target, environment-specific indexing and canonical decisions, supported metadata, and separate written launch authorization; those are not current requirements and are not authorized by this document.
+
 ## Current determination
 
-**Not done.** The approved F02–F07 technical refinement, responsive checks, link checks, and presentation captures are complete, but the prospect presentation-ready definition remains blocked by unresolved F01 information/rights verification and the unperformed reduced-motion emulation check. Client approval, deployment, and launch remain outside scope.
+**Not done.** The approved F02–F07 technical refinement, responsive checks, link checks, and presentation captures are complete, but the prospect presentation-ready definition remains blocked by unresolved F01 information and asset-rights verification, unapproved business truth, the unapproved proposed site plan and applicable SEO requirements, and the unperformed reduced-motion emulation check. Client approval, deployment, and launch remain outside scope.
 
 ## Stop rule
 

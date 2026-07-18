@@ -160,6 +160,21 @@ This log begins with the workflow migration on `2026-07-17`. It does not reconst
 | Files affected | Two new files in `screenshots/` |
 | Follow-up | Use these files only as evidence for the refined `site/` build |
 
+### Decision 013 — Align business-truth, site-plan, and SEO workflow controls
+
+| Field | Entry |
+| --- | --- |
+| Date | `2026-07-17` |
+| Phase | Documentation-only workflow alignment |
+| Decision | Add project-specific `docs/11-business-truth.md`, `docs/12-site-plan.md`, and `docs/13-seo-requirements.md`, then align the existing workflow documents and prompts to use those approval gates. |
+| Reason | The updated reusable workflow separates raw intake from approved public truth, route approval, and environment-specific SEO decisions. |
+| Source | Explicit documentation-only workflow-alignment request; reusable template at `34e824f56c49a175ca02339657612b79cf8fb2b7` used as structural reference |
+| Decision type | Explicit task authorization; documentation only; not client approval |
+| Files affected | Authorized workflow documentation and audit/refinement prompts only; no implementation file |
+| Follow-up | Complete F01 and asset-rights verification; approve business truth, the proposed site plan, and applicable SEO requirements before dependent implementation. |
+
+This alignment preserves `site/`, `source/`, `assets/`, `screenshots/`, prior QA evidence, and every earlier decision entry. F01 business facts, destinations, branding, and asset rights remain unresolved.
+
 ## Unresolved but nonblocking decisions
 
 | ID | Date | Question or gap | Conservative temporary decision | Review point | Status |

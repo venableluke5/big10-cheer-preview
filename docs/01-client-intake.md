@@ -12,7 +12,9 @@
 
 ## Evidence rules
 
-This intake was backfilled from tracked repository evidence for an existing prospect mockup. Existing website copy and screenshots are not formal client approval.
+This intake was backfilled from tracked repository evidence for an existing prospect mockup. It is not direct client intake, and no identified client representative is recorded as its source or approver. Existing website copy and screenshots are not formal client approval.
+
+Intake content is discovery material and is not automatically publishable. Normalize any fact proposed for public use in `docs/11-business-truth.md`, where its source, evidence, permitted usage, confirmation date, confirming party, and approval status must be recorded.
 
 - `Repository-confirmed`: explicitly stated in tracked project documentation or directly observable as repository structure. This does not mean client-approved.
 - `Unverified`: present in the mockup, linked public-site material, or screenshots, but not formally confirmed by the client.
